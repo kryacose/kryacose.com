@@ -1,5 +1,7 @@
 :root {
-  --color-bg: #001410;
+  --color-bg: #001710;
+  --color-bg: #004040;
+  --color-bg: #055;
 }
 
 *,
@@ -21,7 +23,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 /* Utils */
@@ -37,6 +39,7 @@ body {
 h1 {
   font-size: 4rem;
   font-weight: 100;
+  text-align: center;
 }
 h2 {
   font-size: 2.5rem;
@@ -77,6 +80,7 @@ p {
   height: 110px;
   border-radius: 60px;
   margin: 45px auto;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (min-width: 768px) {
@@ -113,6 +117,19 @@ p {
   color: white;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5);
 }
+.btn {
+  border-radius: 20px;
+  padding: 0.5rem 1.8rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.1s;
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5);
+}
 
 /* Grids */
 .grid {
@@ -127,7 +144,7 @@ p {
 
 /* Project */
 .project {
-  margin-bottom: 9rem;
+  margin-bottom: 12rem;
   grid-gap: 2.5rem 4rem;
 }
 .project-heading {
@@ -137,6 +154,7 @@ p {
 .project-image {
   width: 100%;
   border-radius: 8px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 .project-buttons {
   margin-top: 2rem;
@@ -159,4 +177,85 @@ p {
   .project-section-heading {
     margin-bottom: 70px;
   }
+}
+
+/* social-media */
+.social-media-hub {
+  border-radius: 1.8rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.social-media-icon {
+  width: 35px;
+  display: inline-block;
+  filter: brightness(0) invert(100%);
+  transition: all 0.1s;
+}
+.social-media-btn {
+  flex-grow: 1;
+  text-align: center;
+  line-height: 0;
+  padding: 1.6rem;
+  transition: all 0.1s;
+}
+.social-media-btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+.social-media-btn:hover > .social-media-icon {
+  filter: none;
+}
+
+@media screen and (min-width: 768px) {
+  .social-media-hub {
+    margin-top: 50px;
+  }
+  .social-media-icon {
+    width: 28px;
+  }
+  .social-media-btn {
+    padding: 1.2rem;
+  }
+}
+
+/* Landing Section */
+.landing-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Footer */
+.footer-section {
+  padding: 60px 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: auto inherit;
+}
+.footer-text {
+  flex-grow: 2;
+  text-align: center;
+  vertical-align: center;
+  margin-left: 50px;
+  /* line-height: 50px; */
+}
+.footer-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 14px 16px 16px 16px;
+  justify-content: center;
+  margin: auto auto;
+}
+.back-to-top-icon {
+  width: 100%;
 }
