@@ -1,1 +1,1 @@
-[kryacose.com](kryacose.com)
+[kryacose.com](https://www.kryacose.com/)
