@@ -1,6 +1,5 @@
 :root {
   --color-bg: #001710;
-  --color-bg: #004040;
   --color-bg: #055;
 }
 
@@ -124,6 +123,7 @@ p {
   background: rgba(255, 255, 255, 0.2);
   color: white;
   transition: all 0.1s;
+  text-decoration: none;
 }
 .btn:hover {
   background: rgba(255, 255, 255, 0.3);
