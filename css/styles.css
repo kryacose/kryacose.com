@@ -148,7 +148,7 @@ p {
   grid-gap: 2.5rem 4rem;
 }
 .project-heading {
-  line-height: 1.6rem;
+  line-height: 3rem;
   margin-bottom: 2rem;
 }
 .project-image {
@@ -190,7 +190,7 @@ p {
   overflow: hidden;
 }
 .social-media-icon {
-  width: 35px;
+  width: 30px;
   display: inline-block;
   filter: brightness(0) invert(100%);
   transition: all 0.1s;
